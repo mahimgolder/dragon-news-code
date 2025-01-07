@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const LatestNews = () => {
     return (
-        <div className="flex gap-2 items-center bg-gray-200 p-2">
+        <div className="flex gap-2 items-center bg-[#F3F3F3] p-2">
             <p className="bg-[#D72050] px-2 py-1 text-base-100">Latest</p>
             <Marquee pauseOnHover={true} speed={50}> 
             <Link to={"/news"}>
