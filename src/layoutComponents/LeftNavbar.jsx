@@ -1,5 +1,6 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import { useEffect, useState } from "react";
+import { NavLink } from "react-router-dom";
 
 const LeftNavbar = () => {
     const [categories, setCategories] = useState([]);
@@ -18,9 +19,9 @@ const LeftNavbar = () => {
             <div className="flex flex-col flex-start gap-4">
                 {
                     categories.map((eachCategory) =>
-                         <button className="flex justify-start btn" key={eachCategory.category_id}>
+                         <NavLink to={`/category/${eachCategory.category_id}`} className="flex justify-start bg-white btn" key={eachCategory.category_id}>
                             {eachCategory.category_name}
-                            </button> 
+                        </NavLink> 
                     )
                 }
             </div>

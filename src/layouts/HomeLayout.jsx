@@ -14,7 +14,7 @@ const HomeLayout = () => {
                     <LatestNews></LatestNews>
                 </section>
             </header>
-            <nav className="w-11/12 mx-auto">
+            <nav className="w-11/12 mx-auto mb-12 mt-4">
                 <Navbar></Navbar>
             </nav>
             <main className="w-11/12 mx-auto grid grid-cols-12 gap-4">
